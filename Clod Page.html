@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clod Page</title>
+    <style>
+       
+        .navbar{
+            height:70px;
+            background-color: #242424;
+            color:white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sub-navbar{
+            height: 35px;
+            background-color: #C20C0C;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo a{
+            font-weight:bold;
+            font-size: 20px;
+            color:#cccccc;
+            text-decoration: none;
+        }
+
+        .menu {
+            display: flex;
+            list-style-type: none;
+        }
+        .menu li{
+            height:70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .menu li:hover{
+            background-color: black;
+            color: white;
+        }
+
+        .menu a{
+            color:#cccccc;
+            padding: 0 19px;
+            text-decoration: none;
+        }
+
+        .menu a:hover {
+            color: #fff;
+        }
+
+
+        #search{
+            width:158px;
+            height:32px;
+            border-radius: 20px;
+        }
+
+        button{
+            background-color: #242424;
+            color:#cccccc;
+            border-radius: 20px;
+            height:30.4px;
+            width:90px;
+            padding-left: 16px;
+            border: 1px solid #4F4F4F;
+            font-size: 12px;
+            margin:0 0 0 12px;
+
+        }
+
+        .search a{
+            width: 28px;
+            margin-top: 7px;
+            color: #787878;
+            text-decoration: none;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    
+        <div class="navbar">
+            <div class="logo">
+                <a hidefocus="true" href="/#">网易云音乐</a>
+            </div>
+            <ul class="menu">
+                <li>
+                    <a href="#" >发现音乐</a>
+                </li>
+                <li>
+                    <a href="#" >我的音乐</a>
+                </li>
+                <li>
+                    <a href="#" >关注</a>
+                </li>
+                <li>
+                    <a href="#" >商城</a>
+                </li>
+                <li>
+                    <a href="#" >音乐人</a>
+                </li>
+                <li>
+                    <a href="#" >云推歌</a>
+                </li>
+                <li>
+                    <a href="#" >下载客户端</a>
+                </li>
+                
+            </ul>
+            <div class="search">
+                <input type="input"  id="search" placeholder="音乐/视频/电台/用户">
+                <button>创作者中心</button>
+                <a href="#">登录</a>
+            </div>
+        </div>
+        <div class="sub-navbar">
+            <div class="sub-menu">
+                <a href="#" class="sub-active">推荐</a>
+                <a href="#">排行榜</a>
+                <a href="#">歌单</a>
+                <a href="#">主播电台</a>
+                <a href="#">歌手</a>
+                <a href="#">新碟上架</a>
+            </div>
+        </div>
+        
+
+    
+</body>
+</html>

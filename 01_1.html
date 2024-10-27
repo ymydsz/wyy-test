@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01_1</title>
+
+    <style>
+        /* 随用户的视口改变大小。 1vh 等于视口高度的 1%，1vw 则为视口宽度的 1% */
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1msMIy.img');
+            background-size: cover;
+            /* 背景图片覆盖整个页面 */
+            background-position: center;
+            /* 背景居中 */
+            background-attachment: fixed;
+            /* 背景图片固定不随滚动条移动 */
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .container .nav {
+            width: 100%;
+            height: 50px;
+            position: relative
+        }
+
+        .container .nav .leftEle {
+            position: absolute;
+            left: 20px;
+            height: 38.4px;
+            width: 38.4px;
+            cursor: pointer;
+        }
+
+        .container .nav .rightEle {
+            position: absolute;
+            right: 0;
+            border: 0.8px;
+            height: 38.4px;
+            width: 80px;
+            cursor: pointer;
+        }
+
+
+        .search {
+            position: relative;
+            height: 200px;
+
+        }
+
+        #search {
+            width: 758px;
+            height: 44.4px;
+            border: 0.8px solid;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            border-radius: 50px;
+            padding-left: 10px;
+
+        }
+
+        .searchIcon {
+            position: absolute;
+            height: 36px;
+            width: 36px;
+
+            right: 50%;
+            bottom: 50%;
+            margin-right: -380px;
+            margin-bottom: -25px;
+        }
+
+        .floating-menu {
+            display: none;
+            position: absolute;
+            background-color: white;
+            border: solid 1px gainsboro;
+            padding: 10px;
+            z-index: 1000;
+            border-radius: 5px;
+            width: 200px;
+        }
+
+        .leftEle:hover .floating-menu {
+            display: block;
+            top: 50px;
+            left: 0;
+        }
+
+        .rightEle:hover .floating-menu {
+            display: block;
+            top: 50px;
+            right: 0;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="nav">
+            <div class="leftEle">
+                <div class="left">
+                    <span class="grid-dot-icon"><svg width="24" height="24" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 17a2 2 0 110 4 2 2 0 010-4zm7 0a2 2 0 110 4 2 2 0 010-4zM5 17a2 2 0 110 4 2 2 0 010-4zm7-7a2 2 0 110 4 2 2 0 010-4zm7 0a2 2 0 110 4 2 2 0 010-4zM5 10a2 2 0 110 4 2 2 0 010-4zm7-7a2 2 0 110 4 2 2 0 010-4zm7 0a2 2 0 110 4 2 2 0 010-4zM5 3a2 2 0 110 4 2 2 0 010-4z">
+                            </path>
+                        </svg>
+                    </span>
+
+                </div>
+                <div class="floating-menu">
+                    <h3>设置</h3>
+                    <p>这是左侧的悬浮菜单内容</p>
+                </div>
+            </div>
+            <div class="rightEle">
+                <div class="right">
+                    <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.25 2c.97 0 1.75.78 1.75 1.75v3.04c0 1.03-.57 1.97-1.48 2.44l-6.28 3.28a5 5 0 11-4.48 0L3.48 9.23A2.75 2.75 0 012 6.79V3.75C2 2.78 2.78 2 3.75 2h16.5zM12 13.48a3.5 3.5 0 100 7 3.5 3.5 0 000-7zm3.5-9.98h-7v6.66l3.38 1.77c.08.04.16.04.24 0l3.38-1.77V3.5zM7 3.5H3.75a.25.25 0 00-.25.25v3.04c0 .47.26.9.67 1.11L7 9.38V3.5zm13.25 0H17v5.88l2.83-1.48c.41-.22.67-.64.67-1.1V3.74a.25.25 0 00-.25-.25z">
+                        </path>
+                    </svg>
+
+                    <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12.01 2.25c.74 0 1.47.1 2.18.25.32.07.55.33.59.65l.17 1.53a1.38 1.38 0 001.92 1.11l1.4-.61c.3-.13.64-.06.85.17a9.8 9.8 0 012.2 3.8c.1.3 0 .63-.26.82l-1.24.92a1.38 1.38 0 000 2.22l1.24.92c.26.19.36.52.27.82a9.8 9.8 0 01-2.2 3.8.75.75 0 01-.85.17l-1.4-.62a1.38 1.38 0 00-1.93 1.12l-.17 1.52a.75.75 0 01-.58.65 9.52 9.52 0 01-4.4 0 .75.75 0 01-.57-.65l-.17-1.52a1.38 1.38 0 00-1.93-1.11l-1.4.62a.75.75 0 01-.85-.18 9.8 9.8 0 01-2.2-3.8c-.1-.3 0-.63.27-.82l1.24-.92a1.38 1.38 0 000-2.22l-1.24-.92a.75.75 0 01-.28-.82 9.8 9.8 0 012.2-3.8c.23-.23.57-.3.86-.17l1.4.62c.4.17.86.15 1.25-.08.38-.22.63-.6.68-1.04l.17-1.53a.75.75 0 01.58-.65c.72-.16 1.45-.24 2.2-.25zm0 1.5c-.45 0-.9.04-1.35.12l-.11.97a2.89 2.89 0 01-4.02 2.33l-.9-.4A8.3 8.3 0 004.28 9.1l.8.59a2.88 2.88 0 010 4.64l-.8.59a8.3 8.3 0 001.35 2.32l.9-.4a2.88 2.88 0 014.02 2.32l.1.99c.9.15 1.8.15 2.7 0l.1-.99a2.88 2.88 0 014.02-2.32l.9.4a8.3 8.3 0 001.36-2.32l-.8-.59a2.88 2.88 0 010-4.64l.8-.59a8.3 8.3 0 00-1.35-2.32l-.9.4a2.88 2.88 0 01-4.02-2.32l-.11-.98c-.45-.08-.9-.11-1.34-.12zM12 8.25a3.75 3.75 0 110 7.5 3.75 3.75 0 010-7.5zm0 1.5a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="floating-menu">
+                    <h3>设置</h3>
+                    <p>这是右侧的悬浮菜单内容</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="search">
+            <form action="https://www.baidu.com/s" target="_blank" method="get">
+                <input type="text" id="search">
+
+            </form>
+            <div class="searchIcon">
+                <svg aria-hidden="true" id="searchbutton" width="24" height="24" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M10 2.75a7.25 7.25 0 015.63 11.82l4.9 4.9a.75.75 0 01-.98 1.13l-.08-.07-4.9-4.9A7.25 7.25 0 1110 2.75zm0 1.5a5.75 5.75 0 100 11.5 5.75 5.75 0 000-11.5z">
+                    </path>
+                </svg>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
