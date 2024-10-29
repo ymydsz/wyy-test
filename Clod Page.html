@@ -8,6 +8,7 @@
     <title>Clod Page</title>
 
     <style>
+        /* 导航栏 */
         .navbar {
             height: 70px;
             background-color: #242424;
@@ -28,6 +29,7 @@
         .menu {
             display: flex;
             list-style-type: none;
+           
         }
 
         .menu li {
@@ -54,11 +56,13 @@
             color: #fff;
         }
 
-        .menu a.active {
+        .menu .active {
             color: #fff;
             background-color: black;
-        }
+            position:relative;
 
+        }
+        /* 搜索栏 */
         #search {
             width: 158px;
             height: 32px;
@@ -102,12 +106,13 @@
             height:10px;
         }
 
+        /* 次导航栏 */
         .sub-navbar{
             height: 35px;
             background-color: #C20C0C; 
-            display:flex;
-            align-items: center;
+            display: flex;
             justify-content: center;
+            align-items: center;
  
         }
 
@@ -115,28 +120,46 @@
             text-decoration:none;
             color:white;
             font-size: 12px;
-            border-radius: 20px;
-        }
-
-         .sub-menu {
-            gap:20px;
-            margin: 0;
-            display:flex;
-            align-items: center;
-            justify-content: center;
-            list-style-type: none;
+            padding: 0 13px;
+            margin:7px 17px 0 17px;
+            line-height: 35px;
         }
 
         .sub-menu a:hover{
-            background-color: black;
+            background-color:#333;
             padding:0 13px;
-            margin:0 17px;
+            line-height: 35px;
+            border-radius: 20px;
+            
+        }
+
+        .sub-menu a.sub-active{
+            background-color:#333;
+            border-radius: 20px;
+        }
+
+         .sub-navbar .sub-menu {
+            margin: 0;
+            list-style-type: none;
+            width:1100px;
+            height:35px;
+            display: flex;
+            padding-left: 300px;
+           
         }
 
        .trangle {
-           border-top: 10px  solid red;
-           border-left: 10px  solid red;
-           border-right: 10px  solid red;
+           width:0;
+           height:0;
+           border-bottom: 8px  solid red;
+           border-left: 8px  solid transparent;
+           border-right: 8px  solid transparent;
+           position:absolute;
+           left:50%;
+           transform: translateX(-50%);
+           bottom:0;
+           z-index:1000;
+
        }
     </style>
 </head>
@@ -148,8 +171,9 @@
             <a hidefocus="true" href="/#">网易云音乐</a>
         </div>
         <ul class="menu">
-            <li>
-                <a href="#" class="active">发现音乐</a>
+            <li class="active">
+                <a href="#" >发现音乐</a>
+                <div class="trangle"></div>
             </li>
             <li>
                 <a href="#">我的音乐</a>
@@ -211,7 +235,7 @@
     </div>
 
 
-    <div class="trangle"></div>
+   
 </body>
 
 </html>
