@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+
+
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./index.js">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            <a hidefocus="true" href="/#">网易云音乐</a>
+        </div>
+        <ul class="menu">
+            <li class="active">
+                <a href="#" >发现音乐</a>
+                <div class="trangle"></div>
+            </li>
+            <li>
+                <a href="#">我的音乐</a>
+            </li>
+            <li>
+                <a href="#">关注</a>
+            </li>
+            <li>
+                <a href="#">商城</a>
+            </li>
+            <li>
+                <a href="#">音乐人</a>
+            </li>
+            <li>
+                <a href="#">云推歌</a>
+            </li>
+            <li>
+                <a href="#">下载客户端</a>
+            </li>
+
+        </ul>
+        <div class="search">
+            <input type="input" id="search" >
+            <span class="search-icon">
+                <svg aria-hidden="true" id="searchbutton" width="24" height="24" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M10 2.75a7.25 7.25 0 015.63 11.82l4.9 4.9a.75.75 0 01-.98 1.13l-.08-.07-4.9-4.9A7.25 7.25 0 1110 2.75zm0 1.5a5.75 5.75 0 100 11.5 5.75 5.75 0 000-11.5z">
+                    </path>
+                </svg>
+            </span>
+            <button>创作者中心</button>
+            <a href="#">登录</a>
+        </div>
+    </div>
+   <div class="sub-navbar">
+        <ul class="sub-menu">
+            <li>
+                <a href="#" class="sub-active">推荐</a>
+            </li>
+            <li>
+                <a href="#">排行榜</a>
+            </li>
+            <li>
+                <a href="#">歌单</a>
+            </li>
+            <li>
+                <a href="#">主播电台</a>
+            </li>
+            <li>
+                <a href="#">歌手</a>
+            </li>
+            <li>
+                <a href="#">新碟上架</a>
+            </li>
+           
+            
+        </ul>
+    </div>
+
+    <div class="banner">
+        
+        <div class="carousel-container">
+         
+            <div class="arrow">
+                <div class="arrow-left">
+
+                </div>
+                <div class="arrow-right">
+
+                </div>
+            </div>
+            
+            <div class="carousel-content"> 
+                <div id="carousel">
+                    <ul id="imglist">
+                        <li><img class="d-flag" src="http://p1.music.126.net/z7V8TIqDe8eywMmN5BbOMw==/109951170202027771.jpg?imageView&amp;quality=89"></li>
+                        <li><img class="d-flag" src="http://p1.music.126.net/8TJak6LmVHET21ygZN2WPg==/109951170202064017.jpg?imageView&amp;quality=89" id="auto-id-7oT9toemWXmys119" ></li>
+                        <li><img class="d-flag" src="http://p1.music.126.net/bCnbkt3xxcib5OHccL5PuA==/109951170202056140.jpg?imageView&amp;quality=89" id="auto-id-7oT9toemWXmys119"></li>
+                        <li><img class="d-flag" src="http://p1.music.126.net/t6FkFnvQBL3ftAElg-0ADw==/109951170202092748.jpg?imageView&amp;quality=89" id="auto-id-7oT9toemWXmys119"></li>
+                        <li><img class="d-flag" src="http://p1.music.126.net/te6zCuUZv-Bxitjmvx0xQg==/109951170202078966.jpg?imageView&amp;quality=89" id="auto-id-7oT9toemWXmys119"></li> 
+                    </ul>
+                    <div id="handler">
+                        <a href="javascript:;"></a>
+                        <a href="javascript:;"></a>
+                        <a href="javascript:;"></a>
+                        <a href="javascript:;"></a>
+                        <a href="javascript:;"></a>
+                    </div>
+                      
+                </div>
+               
+                <div class="download-section">
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    
+<div class="container">
+    <div class="left-container">
+
+        <div class="recommendation-navbar">
+            <div class="red-circle"></div>
+            <div class="recommendation-navbar-title">
+                <a href="#">热门推荐</a>
+            </div>
+            <ul class="navbar-links">
+                <li><a href="#">华语</a></li>
+                <li class="line">|</li>
+                <li><a href="#">流行</a></li>
+                <li class="line">|</li>
+                <li><a href="#">摇滚</a></li>
+                <li class="line">|</li>
+                <li><a href="#">民谣</a></li>
+                <li class="line">|</li>
+                <li><a href="#">电子</a></li>
+            </ul>
+            <div class="more">
+               <a href="#">更多</a>
+               <span>→</span>
+            </div>
+        </div>
+
+
+        <div class="recommendatin-content">
+            
+                <div class="item">
+                    <img src="http://p1.music.126.net/UDpjFEHmXInxGd_xMAI12w==/109951162811986419.jpg?param=140y140" alt="图片1">
+                    <div class="recommendation-content-bottom">
+
+                        <div class="listening-number">2943万</div>
+
+                    </div>
+                    <div class="info">
+                        <h3>华语民谣 | 孤独的心灵解释诗意和远方</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://p2.music.126.net/X3lwU-K8ahwkswzKmm_xMA==/3435973846756513.jpg?param=140y140" alt="图片2">
+                    <div class="recommendation-content-bottom">
+
+                        <div class="listening-number">2949万</div>
+                        
+                    </div>
+
+                    <div class="info">
+                        <h3>一曲喜欢极尽风流，一抹笑意极尽欢颜。</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://p2.music.126.net/0vkWKg2-Tabyuf9htUOE7g==/109951170176038715.jpg?param=140y140" alt="图片3">
+                    <div class="recommendation-content-bottom">
+
+                        <div class="listening-number">943万</div>
+                        
+                    </div>
+                    <div class="info">
+                        <h3>「纯音乐」你个儿需要安静的氛围</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://p2.music.126.net/zAuVCW-cUvn29s9IxuQh-w==/109951167071306612.jpg?param=140y140" alt="图片4">
+                    <div class="recommendation-content-bottom">
+
+                        <div class="listening-number">922</div>
+                        
+                    </div>
+                    <div class="info">
+                        <h3>20℃:北京青年的图鉴 ENFP女孩的非典型...</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://p2.music.126.net/0a56FLdyySKVC6g15DL-RQ==/109951164266089265.jpg?param=140y140" alt="图片5">
+                    <div class="recommendation-content-bottom">
+
+                        <div class="listening-number">1946万</div>
+                        
+                    </div>
+                    <div class="info">
+                        <h3>学习歌单I极静轻音乐
+                            01</h3>
+                       
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://p1.music.126.net/3ZliHpSKgx39mlLdLauGxw==/109951170129923938.jpg?param=140y140" alt="图片6">
+                    <div class="recommendation-content-bottom">
+
+                        <div class="listening-number">533</div>
+                        
+                    </div>
+                    <div class="info">
+                        <h3>电台节目 04伊帕尔汗|
+                           
+                            与生活方式香氛品牌
+                            起,掌控情绪自由</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://p2.music.126.net/ZbuiLGR3I1QPzZAuU2uyiA==/109951168533609274.jpg?param=140y140" alt="图片7">
+                    <div class="recommendation-content-bottom">
+
+                        <div class="listening-number">8013万</div>
+                        
+                    </div>
+                    <div class="info">
+                        
+                        <h3>100首刷题纯音乐|喧嚣
+                            中找寻宁静的片刻</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://p1.music.126.net/Ns7lkwVCx1RjLwTuR4eU8w==/109951167199080124.jpg?param=140y140" alt="图片8">
+                    <div class="recommendation-content-bottom">
+
+                        <div class="listening-number">7255万</div>
+                        
+                    </div>
+                    <div class="info">
+                        <h3>电台节目 数鸭子</h3>
+                    </div>
+                </div>
+                
+        </div>
+
+        <div class="album-navbar">
+            <div class="red-circle"></div>
+            <div class="album-navbar-title">
+                <a href="#">热门推荐</a>
+            </div>
+            <div class="more">
+                <a href="#">更多</a>
+                <span>→</span>
+             </div>
+        </div>
+
+        <div class="new-album">
+            <div class="albums">
+
+            </div>
+        </div>
+
+        <div class="List">
+            <div class="red-circle"></div>
+            <div class="List-title">
+                <a href="#">榜单</a>
+            </div>
+            <div class="more">
+                <a href="#">更多</a>
+                <span>→</span>
+             </div>
+        </div>
+
+        <div class="blk">
+            <div class="blk1">
+                <div class="top">
+                    <div class="billboard-picture">
+                        <img class="j-img" data-src="http://p3.music.126.net/rIi7Qzy2i2Y_1QD7cd0MYA==/109951170048506929.jpg?param=100y100" src="http://p3.music.126.net/rIi7Qzy2i2Y_1QD7cd0MYA==/109951170048506929.jpg?param=100y100">
+                    </div>
+                    <div class="billboard">
+                        <div class="bill">飙升榜</div>
+                        <div class="button">
+                            
+                        </div>
+                    </div>
+                </div>
+                <ol class="detailed-billboard">
+                    <li class="single">
+                        <span class="top-three">1</span>
+                        <div class="bill-name">
+                            晴天
+                        </div>
+                    </li>
+                    <li class="even">
+                        <span class="top-three">2</span>
+                        <div class="bill-name">
+                            曼陀罗华
+                        </div>
+                    </li>
+                    <li class="single">
+                        <span  class="top-three">3</span>
+                        <div class="bill-name">
+                            Call For Me
+                        </div>
+                    </li>
+                    <li class="even">
+                        <span class="except">4</span>
+                        <div class="bill-name">
+                            小孩
+                        </div>
+                    </li>
+                    <li class="single">
+                        <span class="except">5</span>
+                        <div class="bill-name">
+                            千千阙歌
+                        </div>
+                    </li>
+                    <li class="even">
+                        <span class="except">6</span>
+                        <div class="bill-name">
+                            茶花开了
+                        </div>
+                    </li>
+                    <li class="single">
+                        <span class="except">7</span>
+                        <div class="bill-name">
+                            一点
+                        </div>
+                    </li>
+                    <li class="even">
+                        <span class="except">8</span>
+                        <div class="bill-name">
+                            淘金记
+                        </div>
+                    </li>
+                    <li class="single">
+                        <span class="except">9</span>
+                        <div class="bill-name">
+                            Midnight Sky
+                        </div>
+                    </li>
+                    <li class="even">
+                        <span class="except">10</span>
+                        <div class="bill-name">
+                            心淡
+                        </div>
+                    </li>
+                    <li id="select-all" class="single">
+                        <div class="select">
+                            查看全部>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+            <div class="blk1">
+                <div class="top">
+                    <div class="billboard-picture">
+                        <img class="j-img" data-src="http://p4.music.126.net/5guhqPBTcIrrhLBotgaT6w==/109951170048511751.jpg?param=100y100" src="http://p4.music.126.net/5guhqPBTcIrrhLBotgaT6w==/109951170048511751.jpg?param=100y100">
+                    </div>
+                    <div class="billboard">
+                        <div class="bill">新歌榜</div>
+                        <div class="button">
+                            
+                        </div>
+                    </div>
+                </div>
+                <ol class="detailed-billboard">
+                    <li class="single">
+                        <span class="top-three">1</span>
+                        <div class="bill-name">
+                            曼陀罗花
+                        </div>
+                    </li>
+                    <li class="even">
+                        <span class="top-three">2</span>
+                        <div class="bill-name">
+                            租购
+                        </div>
+                    </li>
+                    <li class="single">
+                        <span class="top-three">3</span>
+                        <div class="bill-name">
+                            你的
+                        </div>
+                    </li>
+                    <li class="even">
+                        <span class="except">4</span>
+                        <div class="bill-name">
+                            穿
+                        </div>
+                    </li>
+                    <li class="single">
+                        <span class="except">5</span>
+                        <div class="bill-name">
+                            谦让
+                        </div>
+                    </li>
+                    <li class="even">
+                        <span class="except">6</span>
+                        <div class="bill-name">
+                            野人
+                        </div>
+                    </li>
+                    <li class="single">
+                        <span class="except">7</span>
+                        <div class="bill-name">
+                            Ma Meilleure Ennemie
+                        </div>
+                    </li>
+                    <li class="even">
+                        <span class="except">8</span>
+                        <div class="bill-name">
+                            一点
+                        </div>
+                    </li>
+                    <li class="single">
+                        <span class="except">9</span>
+                        <div class="bill-name">
+                            褪黑素
+                        </div>
+                    </li>
+                    <li class="even">
+                        <span class="except">10</span>
+                        <div class="bill-name">
+                            叹息
+                        </div>
+                    </li>
+                    <li id="select-all" class="single">
+                        <div class="select">
+                            查看全部>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+            <div class="blk1">
+                <div class="top">
+                    <div class="billboard-picture">
+                        <img class="j-img" data-src="http://p4.music.126.net/BaP9nrocNTL3gGThysv4eQ==/109951170091896587.jpg?param=100y100" src="http://p4.music.126.net/BaP9nrocNTL3gGThysv4eQ==/109951170091896587.jpg?param=100y100">
+                    </div>
+                    <div class="billboard">
+                        <div class="bill">原创榜</div>
+                        <div class="button">
+                            
+                        </div>
+                    </div>
+                </div>
+                <ol class="detailed-billboard">
+                    <li class="single">
+                        <span class="top-three">1</span>
+                        <div class="bill-name">
+                            船
+                        </div>
+                    </li>
+                    <li class="even">
+                        <span class="top-three">2</span>
+                        <div class="bill-name">
+                            泰兰德雨季
+                        </div>
+                    </li>
+                    <li class="single">
+                        <span class="top-three">3</span>
+                        <div class="bill-name">
+                            无人投靠
+                        </div>
+                    </li>
+                    <li class="even">
+                        <span class="except">4</span>
+                        <div class="bill-name">
+                            SWAG
+                        </div>
+                    </li>
+                    <li class="single">
+                        <span class="except">5</span>
+                        <div class="bill-name">
+                            论当代年轻人精神状态
+                        </div>
+                    </li>
+                    <li class="even">
+                        <span class="except">6</span>
+                        <div class="bill-name">
+                            她不在幻想
+                        </div>
+                    </li>
+                    <li class="single">
+                        <span class="except">7</span>
+                        <div class="bill-name">
+                            记忆闪烁
+                        </div>
+                    </li>
+                    <li class="even">
+                        <span class="except">8</span>
+                        <div class="bill-name">
+                            山珍
+                        </div>
+                    </li>
+                    <li class="single">
+                        <span class="except">9</span>
+                        <div class="bill-name">
+                            烦人
+                        </div>
+                    </li>
+                    <li class="even">
+                        <span class="except">10</span>
+                        <div class="bill-name">
+                            记忆
+                        </div>
+                    </li>
+                    <li id="select-all" class="single">
+                        <div class="select">
+                            查看全部>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="right-container">
+
+        <div class="info">
+            <div class="register-info">登录网易云音乐,可以享受无限收藏的乐趣,并且无限同步到手机</div>
+            <div class="register">
+              <button>用户登录</button>
+            </div> 
+        </div>
+
+        <div class="singer">
+            <div class="resident">
+                <div class="resident-singer">
+                    入驻歌手
+                </div>
+
+                <div class="all">
+                    <a href="#">查看全部></a>
+                </div>
+            </div>
+
+            <div class="singer-list">
+                <ul class="list">
+                    <li>
+                        <div class="single-list">
+                            <a href="#" class="singing"></a>
+                            <div class="head">
+                                <img class="j-img" src="http://p1.music.126.net/cSAmmAvsKhm3N-zxWg7QcQ==/109951168490195225.jpg?param=62y62">
+                            </div>
+                            <div class="nameinfo">
+                                <div class="info1">
+                                    张惠妹aMEI
+                                </div>
+                                <div class="info2">
+                                    台湾歌手张惠妹
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="single-list">
+                            <a href="#" class="singing"></a>
+                            <div class="head">
+                                <img class="j-img" src="http://p1.music.126.net/FRjXcFEflJMI0UBFauC--g==/109951169959806190.jpg?param=62y62"> 
+                            </div>
+                            <div class="nameinfo">
+                                <div class="info1">
+                                    吴莫愁Momo
+                                </div>
+                                <div class="info2">
+                                    《中国好声音》选手
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="single-list">
+                            <a href="#" class="singing"></a>
+                            <div class="head">
+                                <img class="j-img" src="http://p1.music.126.net/whG7pbsbd1akKtOE7V3R_Q==/109951168299161319.jpg?param=62y62">    
+                            </div>
+                            <div class="nameinfo">
+                                <div class="info1">
+                                    孙楠
+                                </div>
+                                <div class="info2">
+                                    歌手孙楠
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="single-list">
+                            <a href="#" class="singing"></a>
+                            <div class="head">
+                                <img class="j-img" src="http://p1.music.126.net/1GIlkxKmvKu66ufU83FyvA==/31885837222663.jpg?param=62y62">   
+                            </div>
+                            <div class="nameinfo">
+                                <div class="info1">
+                                    麦田老狼
+                                </div>
+                                <div class="info2">
+                                    歌手，音乐人
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="single-list">
+                            <a href="#" class="singing"></a>
+                            <div class="head">
+                                <img class="j-img" src="http://p1.music.126.net/MXMZYksJmsa0gcGkuk2mDQ==/109951167712155407.jpg?param=62y62">
+                            </div>
+                            <div class="nameinfo">
+                                <div class="info1">
+                                    陈楚生
+                                </div>
+                                <div class="info2">
+                                    唱作歌手
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="application-button">
+            <button>申请成为网易音乐人</button>
+        </div>
+
+        <div class="active">
+            <div class="popular">
+                热门主播
+            </div>
+            <ul class="anchors">
+                <li>
+                    <div class="single-anchor">
+                        <div class="head2">
+                            <img class="j-img" src="http://p2.music.126.net/H3QxWdf0eUiwmhJvA4vrMQ==/1407374893913311.jpg?param=40y40" data-src="http://p2.music.126.net/H3QxWdf0eUiwmhJvA4vrMQ==/1407374893913311.jpg?param=40y40">
+                        </div>
+                        <div class="name-info">
+                            <div class="info1">
+                                陈立
+                            </div>
+                            <div class="info2">   
+                                心理学家、美食家陈立教授
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="single-anchor">
+                        <div class="head2">
+                            <img class="j-img" src="http://p2.music.126.net/GgXkjCzeH4rqPCsrkBV1kg==/109951164843970584.jpg?param=40y40" data-src="http://p2.music.126.net/GgXkjCzeH4rqPCsrkBV1kg==/109951164843970584.jpg?param=40y40">
+                        </div>
+                        <div class="name-info">
+                            <div class="info1">
+                                刘维
+                            </div>
+                            <div class="info2">
+                                歌手、播客节目《维维道来 ..
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="single-anchor">
+                        <div class="head2">
+                            <img class="j-img" src="http://p2.music.126.net/8hwBPg5JjLuiAbNraZqs3w==/109951169807325805.jpg?param=40y40" data-src="http://p2.music.126.net/8hwBPg5JjLuiAbNraZqs3w==/109951169807325805.jpg?param=40y40">
+                        </div>
+                        <div class="name-info">
+                            <div class="info1">
+                                莫非定律乐团
+                            </div>
+                            <div class="info2">
+                                男女双人全创作独立乐团
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="single-anchor">
+                        <div class="head2">
+                            <img class="j-img" src="http://p2.music.126.net/NHjNoFpLDEZ-3OR9h35z1w==/109951165825466770.jpg?param=40y40" data-src="http://p2.music.126.net/NHjNoFpLDEZ-3OR9h35z1w==/109951165825466770.jpg?param=40y40">
+                        </div>
+                        <div class="name-info">
+                            <div class="info1">
+                                碎嘴许美达
+                            </div>
+                            <div class="info2">
+                                脱口秀网络红人
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>  
+                    <div class="single-anchor">
+                        <div class="head2">
+                            <img class="j-img" src="http://p2.music.126.net/mMZvNruOjEa4XNL6-lWjNg==/109951168919647064.jpg?param=40y40" data-src="http://p2.music.126.net/mMZvNruOjEa4XNL6-lWjNg==/109951168919647064.jpg?param=40y40">
+                        </div>
+                        <div class="name-info">
+                            <div class="info1">
+                                银临Rachel
+                            </div>
+                            
+                        </div>
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+
+    
+    </div>
+
+
+
+
+</div>
+
+
+    <script src="./index.js"></script>
+   
+</body>
+
+</html>
